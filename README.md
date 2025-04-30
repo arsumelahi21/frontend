@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Matcher Frontend
 
-## Getting Started
+This is the frontend application for the Job Matcher technical test, built with **Next.js** and deployed on **Vercel**. It interacts with a NestJS backend and uses Supabase-hosted PostgreSQL with `pgvector` for similarity-based matching.
 
-First, run the development server:
+---
 
-```bash
+## 🌐 Live Demo
+
+👉 [https://frontend-one-snowy-46.vercel.app](https://frontend-one-snowy-46.vercel.app)
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **Axios** for API calls
+- **Tailwind CSS** for styling
+- **React Hot Toast** for notifications
+- **Deployed on Vercel**
+
+---
+
+## 📦 Setup
+
+### 1. Clone the Repository
+
+git clone https://github.com/arsumelahi21/frontend.git
+
+cd frontend
+
+---
+
+### 2. Install Dependencies
+
+npm install
+
+---
+
+### 3. Environment Variables
+
+NEXT_PUBLIC_API_URL=https://srn-backend-production.up.railway.app/api (in my case this is url or replace with your localhost)
+
+---
+
+### 4. Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🧭 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add Job – Submit job title & description.
 
-## Learn More
+Add Candidate – Submit candidate name & skill summary.
 
-To learn more about Next.js, take a look at the following resources:
+Match Candidates – Paste a job description and find top 3 candidate matches based on vector similarity.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Modern UI – Clean and responsive interface using Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Toast Notifications – Smooth success/error feedback without native alert()s.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
